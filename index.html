@@ -2,175 +2,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khemraj's Website</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             text-align: center;
-            background: linear-gradient(135deg, #eef2ff, #f8fafc);
-            color: #1e293b;
-        }
-
-        nav {
-            background: #111827;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 8px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #60a5fa;
+            background: #f4f6f8;
+            color: #222;
         }
 
         header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background: #222;
             color: white;
-            padding: 60px 20px;
+            padding: 40px 20px;
         }
 
-        header h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 18px;
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            border: 4px solid white;
         }
 
         section {
             background: white;
-            margin: 25px auto;
-            padding: 30px 20px;
-            width: 90%;
-            max-width: 800px;
-            border-radius: 18px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin: 20px;
+            padding: 25px;
+            border-radius: 15px;
         }
 
-        section h2 {
-            color: #2575fc;
-        }
-
-        .skill,
-        .project {
-            background: #f1f5f9;
-            margin: 15px 0;
-            padding: 18px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-
-        .skill:hover,
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-        }
-
-        button {
-            background: #2575fc;
-            color: white;
-            border: none;
-            padding: 13px 22px;
-            border-radius: 10px;
-            font-size: 16px;
+        h2 {
+            color: #333;
         }
 
         footer {
-            background: #111827;
+            background: #222;
             color: white;
-            padding: 20px;
+            padding: 15px;
             margin-top: 30px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 28px;
-            }
-
-            header {
-                padding: 40px 15px;
-            }
-
-            nav a {
-                margin: 6px;
-            }
-
-            section {
-                width: 94%;
-                padding: 25px 15px;
-            }
         }
     </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <header>
+        <img src="myphoto.jpg" class="profile" alt="Khemraj Photo">
 
-<header>
-    <h1>Hi, I'm Khemraj 👋</h1>
-    <p>Welcome to my personal website</p>
-</header>
+        <h1>Hi I'm Khemraj</h1>
+        <p>Welcome to my personal website</p>
+    </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is Khemraj.</p>
-    <p>I am learning website making and photo editing.</p>
+    <section>
+        <h2>About Me</h2>
+        <p>Hello my name is Khemraj.</p>
+        <p>I am learning website making and photo editing.</p>
+    </section>
 
-    <h2>My Goals 🎯</h2>
-    <p>Learn more about website making</p>
-    <p>Improve my photo editing skills</p>
-    <p>Create better websites</p>
-    <p>Learn new things every day</p>
+    <section>
+        <h2>My Skills</h2>
+        <p>🌐 Website Making</p>
+        <p>📸 Photo Editing</p>
+        <p>💡 Learning New Things</p>
+    </section>
 
-    <button>📩 Contact Me</button>
-</section>
+    <section>
+        <h2>My Projects</h2>
+        <p>My Personal Website</p>
+        <p>My First Website Using HTML and CSS</p>
+    </section>
 
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="skill">💻 Website Making</div>
-    <div class="skill">🎨 Photo Editing</div>
-    <div class="skill">📚 Learning New Things</div>
-</section>
+    <section>
+        <h2>Contact Me</h2>
+        <p>Thank you for visiting my website!</p>
+    </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="project">
-        <h3>🌐 Personal Website</h3>
-        <p>My first website using HTML and CSS.</p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Thank you for visiting my website!</p>
-</section><img src="photo.jpg" alt="My Photo" width="200">
-
-<footer>
-    <p>© 2026 Khemraj</p>
-</footer>
+    <footer>
+        © 2026 Khemraj
+    </footer>
 
 </body>
 </html>
