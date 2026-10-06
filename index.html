@@ -14,54 +14,80 @@
             margin: 0;
             font-family: Arial, sans-serif;
             text-align: center;
-            background: #f4f6f8;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #1e293b;
         }
 
         nav {
             background: #111827;
-            padding: 15px 5px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 5px 8px;
+            margin: 8px;
             font-weight: bold;
             display: inline-block;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
         }
 
         header {
             background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         header h1 {
-            font-size: 36px;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
         }
 
         section {
             background: white;
-            margin: 20px auto;
+            margin: 25px auto;
             padding: 30px 20px;
             width: 90%;
             max-width: 800px;
-            border-radius: 15px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         }
 
-        .skill, .project {
+        section h2 {
+            color: #2575fc;
+        }
+
+        .skill,
+        .project {
             background: #f1f5f9;
-            margin: 12px 0;
-            padding: 15px;
-            border-radius: 10px;
+            margin: 15px 0;
+            padding: 18px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .skill:hover,
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
         }
 
         button {
             background: #2575fc;
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
+            padding: 13px 22px;
+            border-radius: 10px;
             font-size: 16px;
         }
 
@@ -69,21 +95,20 @@
             background: #111827;
             color: white;
             padding: 20px;
+            margin-top: 30px;
         }
 
-        /* Mobile */
         @media (max-width: 600px) {
             header h1 {
                 font-size: 28px;
             }
 
             header {
-                padding: 35px 15px;
+                padding: 40px 15px;
             }
 
             nav a {
-                display: block;
-                margin: 10px;
+                margin: 6px;
             }
 
             section {
