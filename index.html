@@ -1,8 +1,15 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khemraj's Website</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -12,14 +19,15 @@
 
         nav {
             background: #111827;
-            padding: 15px;
+            padding: 15px 5px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 10px;
+            margin: 5px 8px;
             font-weight: bold;
+            display: inline-block;
         }
 
         header {
@@ -28,25 +36,60 @@
             padding: 50px 20px;
         }
 
+        header h1 {
+            font-size: 36px;
+        }
+
         section {
             background: white;
             margin: 20px auto;
             padding: 30px 20px;
+            width: 90%;
             max-width: 800px;
             border-radius: 15px;
         }
 
         .skill, .project {
             background: #f1f5f9;
-            margin: 12px;
+            margin: 12px 0;
             padding: 15px;
             border-radius: 10px;
+        }
+
+        button {
+            background: #2575fc;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
         }
 
         footer {
             background: #111827;
             color: white;
             padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            header {
+                padding: 35px 15px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            section {
+                width: 94%;
+                padding: 25px 15px;
+            }
         }
     </style>
 </head>
@@ -66,17 +109,18 @@
 </header>
 
 <section id="about">
-    <h2>About Me</<section>
-  <h2>My Goals 🎯</h2>
-  <p>Learn more about website making</p>
-  <p>Improve my photo editing skills</p>
-  <p>Create better websites</p>
-  <p>Learn new things every day</p>
-    </section>h2><button>📩 Contact Me</button>
+    <h2>About Me</h2>
     <p>Hello! My name is Khemraj.</p>
     <p>I am learning website making and photo editing.</p>
-</section>
 
+    <h2>My Goals 🎯</h2>
+    <p>Learn more about website making</p>
+    <p>Improve my photo editing skills</p>
+    <p>Create better websites</p>
+    <p>Learn new things every day</p>
+
+    <button>📩 Contact Me</button>
+</section>
 
 <section id="skills">
     <h2>My Skills</h2>
@@ -87,6 +131,7 @@
 
 <section id="projects">
     <h2>My Projects</h2>
+
     <div class="project">
         <h3>🌐 Personal Website</h3>
         <p>My first website using HTML and CSS.</p>
